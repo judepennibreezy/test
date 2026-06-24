@@ -17,7 +17,7 @@
       <!-- Loop through the imported JSON data -->
       <li v-for="item in filteredItems" :key="item.id" class='list-group-item bg-secondary'>
            <img :src="item.iconUrl" alt="Small Image" class="rounded-circle me-3 ">
-  {{ item.name }} - ${{ item.buyerPrice }}
+  {{ item.name }} - {{ item.buyerPrice }}
       </li>
     </ul>
 
